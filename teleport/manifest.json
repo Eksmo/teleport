@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "MyBook <-> LitRes",
+  "description": "Jump to book page on other site",
+  "version": "1.0",
+
+  "icons": {
+    "128": "icon.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "background": {
+    "scripts": ["main.js"],
+    "persistent": false
+  },
+
+  "permissions": [
+    "tabs",
+    "http://*/",
+    "https://*/"
+  ]
+}
